@@ -1,0 +1,14 @@
+MENU BEGIN GENTOOLIVE
+MENU LABEL ^Gentoo Live 2012
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/gentoolive/gentoolive.png
+
+MENU INCLUDE er/plugins/gentoolive/i386/gentoolivemain.menu
+MENU INCLUDE er/plugins/gentoolive/x86_64/gentoolivemain.menu
+  
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

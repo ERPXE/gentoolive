@@ -1,0 +1,16 @@
+.:
+filelist.txt
+gentoolive.menu
+gentoolive.png
+i386
+x86_64
+
+./i386:
+gentoo
+gentoo.igz
+gentoolivemain.menu
+
+./x86_64:
+gentoo64
+gentoo64.igz
+gentoolivemain.menu

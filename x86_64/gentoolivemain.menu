@@ -1,0 +1,17 @@
+LABEL GENTOOLIVE64
+MENU LABEL ^Gentoo Live - x64
+KERNEL er/plugins/gentoolive/x86_64/gentoo64
+INITRD er/plugins/gentoolive/x86_64/gentoo64.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=791 nfsroot=10.0.0.1:/tftpboot/er/shares/gentoolive cdroot=1 real_root=/dev/nfs aufs
+TEXT HELP
+                 Gentoo Live - x64.
+ENDTEXT
+
+LABEL GENTOONOFBLIVE64
+MENU LABEL ^Gentoo Live Safe Mode - x64
+KERNEL er/plugins/gentoolive/x86_64/gentoo64
+INITRD er/plugins/gentoolive/x86_64/gentoo64.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=normal nfsroot=10.0.0.1:/tftpboot/er/shares/gentoolive cdroot=1 real_root=/dev/nfs aufs
+TEXT HELP
+                 Gentoo Live Safe Mode - x64.
+ENDTEXT
